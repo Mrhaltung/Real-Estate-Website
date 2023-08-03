@@ -51,13 +51,15 @@ const PropertyDetails = () => {
           </div>
           <div className="flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8">
             <div className="flex items-center gap-x-4 mb-8">
-              <div className="w-20 h-20 p-1 border border-gray-300 rounded-full">
+              <div className="w-20 h-20 p-1">
                 <img src={house.agent.image} alt="agent image" />
               </div>
-              <div className="font-bold text-lg">{house.agent.name}</div>
-              <Link to className="text-violet-700">
-                View Listings
-              </Link>
+              <div className="flex flex-col">
+                <div className="font-bold text-lg">{house.agent.name}</div>
+                <Link to className="text-violet-700">
+                  View Listings
+                </Link>
+              </div>
             </div>
             <form className="flex flex-col gap-y-4">
               <input
